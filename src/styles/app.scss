@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    h1,h2,h3,h4{
+        color:rgb(5, 5, 22);
+    }
+   
+    body{
+        background: url('./img/—Pngtree—water\ splash\ pink\ gradient\ brush_5658363.png') center bottom/ cover no-repeat;
+        font-family: 'Fraunces', serif;
+    }
+}
+.App{
+    transition: all .5 ease;
+}
+.activeLibrary{
+    margin-left: 10%;
+}
+
+
+// style of all components 
+
+@import './player';
+@import './song';
+@import './library';
+@import './nav';

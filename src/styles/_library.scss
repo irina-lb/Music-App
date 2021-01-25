@@ -1,0 +1,70 @@
+// all list of songs
+.library{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    background: rgba(242, 243, 243, .8);
+    box-shadow: 2px 2px 50px rgb(221, 216, 216);
+    overflow: scroll;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    opacity:0;
+    
+    h2{
+        padding: 2rem;
+    }
+}
+
+// each song
+.song_box{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor:pointer;
+    transition: background .5s ease;
+    
+    img{
+        width: 30%;
+    }
+    &:hover{
+        background-color: rgb(240, 218, 240);
+    }
+    .description{
+        color:rgb(58, 6, 58);
+        padding-left: 1rem;
+        h4{
+            font-size: small;
+        }
+    }
+
+}
+// toggle design 
+.selected{
+    background: rgb(236, 179, 236);
+
+}
+.active{
+    transform:translateX(0%) ;
+    opacity: 1;
+}
+
+// scroll design for the library of the songs
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(58, 6, 58) transparent;
+}
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 100%;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color:  rgb(58, 6, 58);
+    border-radius: 20px;
+    border: transparent;
+}
